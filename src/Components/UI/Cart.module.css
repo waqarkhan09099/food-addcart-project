@@ -1,0 +1,103 @@
+.cart-items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-height: 20rem;
+  overflow: hidden;
+}
+
+.cart-items h3{
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: brown;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.addAndMinus{
+  display: flex;
+
+}
+
+.addminusbutton{
+  margin: 0 0.1rem;
+  padding:0.5rem 0.8rem;
+  color: red;
+}
+
+.actions {
+  float: right;
+  display: flex;
+  flex-direction: row;
+  text-align: right;
+  margin: 0.5rem 0.2rem;
+  justify-content: right;
+}
+
+.actions button {
+  font: inherit;
+  cursor: pointer;
+  color: #8a2b06;
+  font-weight: bold;
+  background-color: transparent;
+  border: 2px solid #fa5c1e;
+  padding: 0.5rem 2rem;
+  border-radius: 25px;
+  margin-left: 1rem;
+
+}
+
+.actions button:hover,
+.actions button:active {
+  background-color: rgba(220, 20, 60, 0.52);
+  border-color: crimson;
+  color: white;
+}
+
+.actions .button--alt {
+  color: crimson;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.actions .button {
+  background-color: #8a2b06;
+  color: white;
+}
+
+.meal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.meal h3 {
+  margin: 0 0 0.25rem 0;
+}
+
+.description {
+  font-style: italic;
+}
+
+.count{
+  /* border: 2px solid white; */
+  color: black;
+  border-radius: 10px;
+  /* padding: 0.5rem; */
+}
+
+.price {
+  margin-top: 0.25rem;
+  font-weight: bold;
+  color: #ad5502;
+  font-size: 1.25rem;
+}

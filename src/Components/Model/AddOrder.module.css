@@ -1,0 +1,86 @@
+.section {
+  background: linear-gradient(rgba(0, 0, 0, 0.404), rgba(255, 255, 255, 0.589)),
+    url(../../Assets/HeaderImage.jpg) no-repeat top/cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 6;
+  overflow: auto;
+}
+
+.forcard{
+    display: flex;
+    height: 65%;
+    width: 100%;
+    flex-direction: column;
+    overflow: auto;
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(223, 73, 73); 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000; 
+}
+
+.orderul{width: 65%;}
+
+.orderlist{
+  width: 100%;
+  padding:1rem 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 2px solid white;
+
+}
+
+
+.orderspan,
+.orderpara {
+  display: inline-block;
+  margin: 0.5rem 0;
+  font-weight: bold;
+}
+
+.orderhead {
+  color: crimson;
+  margin: 0.2rem 0;
+  width: 50%;
+  border-bottom: 2px solid grey;
+  text-align: center;
+  padding-bottom: 0.7rem;
+}
+
+.order {
+  width: 100%;
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  display: inline-block;
+  width: 17%;
+  text-align: center;
+  justify-content: center;
+  padding: 0.2rem 0.6rem;
+}

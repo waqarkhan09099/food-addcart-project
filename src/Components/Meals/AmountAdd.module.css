@@ -1,0 +1,36 @@
+
+.amount{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+
+.amount .price{
+    color: red;
+    display: inline-block;
+    font-weight:bold;
+}
+
+.amount .button{
+   
+    font-size: 0.8rem;
+    font-weight: bold;
+    border-radius: 20px;
+    background-color: rgba(220, 20, 60, 0.301);
+    color: white;
+    padding: 0.5rem 0.8rem;
+}
+
+.amount .icon{
+    font-size: 1.2rem;
+    color: red;
+    margin-left:0.5rem;
+}
+
+.amount .button:hover{
+    color: crimson;
+    background-color: rgba(255, 255, 255, 0.582);
+}
