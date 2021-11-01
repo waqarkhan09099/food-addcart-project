@@ -117,6 +117,13 @@ const DUMMY_MEALS = [
         description: 'Bloon Decoration',
         price: 10000,
     }
+    ,
+    {
+        id: 'Zeeshan',
+        name: 'Flower',
+        description: 'Flower Decoration',
+        price: 10000,
+    }
 ];
 
 const dataId=DUMMY_MEALS.map(item=>item.id);
