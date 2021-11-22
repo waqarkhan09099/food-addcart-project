@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.cb8c5b30.chunk.css",
+    "main.js": "/static/js/main.f4605b0a.chunk.js",
+    "main.js.map": "/static/js/main.f4605b0a.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.f5bac279.js",
+    "runtime-main.js.map": "/static/js/runtime-main.f5bac279.js.map",
+    "static/js/2.041cd4c8.chunk.js": "/static/js/2.041cd4c8.chunk.js",
+    "static/js/2.041cd4c8.chunk.js.map": "/static/js/2.041cd4c8.chunk.js.map",
+    "static/js/3.4be9124c.chunk.js": "/static/js/3.4be9124c.chunk.js",
+    "static/js/3.4be9124c.chunk.js.map": "/static/js/3.4be9124c.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.cb8c5b30.chunk.css.map": "/static/css/main.cb8c5b30.chunk.css.map",
+    "static/js/2.041cd4c8.chunk.js.LICENSE.txt": "/static/js/2.041cd4c8.chunk.js.LICENSE.txt",
+    "static/media/AddOrder.module.css": "/static/media/HeaderImage.122971cd.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f5bac279.js",
+    "static/js/2.041cd4c8.chunk.js",
+    "static/css/main.cb8c5b30.chunk.css",
+    "static/js/main.f4605b0a.chunk.js"
+  ]
+}
