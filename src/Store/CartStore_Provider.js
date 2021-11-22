@@ -7,32 +7,40 @@ const defaultInitialData = {
 };
 
 const reducerFunc = (state, action) => {
+    console.log(action.item.amount)
+    console.log(state.items)
     if (action.type === "ADD") {
         const updateItemsNumber = state.totalAmount + action.item.price * action.item.amount;
         const updatedNumberItem = +updateItemsNumber;
 
-        // const existingItemIndex = state.items.findIndex((items) => items.id === action.items.id);
-        // const existingItem = state.items[existingItemIndex];
-        // let updateItem;
-        // let updateItems;
-        // if (existingItem) {
-        //     updateItem = {
-        //         ...existingItem,
-        //         amount: existingItem.amount + action.items.amount
-        //     };
-        //     updateItems={...state.items};
-        //     updateItems[existingItemIndex]=updateItem;
-        // }else{
-        //     updateItem={...action.items};
+        const existingItemIndex = state.items.findIndex((items) => items.id === action.item.id);
+        const existingItem = state.items[existingItemIndex];
+        console.log(existingItem)
+        let updateItem;
+        let updateItems;
+        if (existingItem) {
+            updateItem = {
+                ...existingItem,
+                amount: existingItem.amount + action.item.amount
+            };
+            updateItems=[...state.items];
+            console.log(updateItems)
+            updateItems[existingItemIndex]=updateItem;
+        }
+        // else{
+        //     updateItem=[...action.item];
         //     updateItems=state.items.concat(action.item);
         // }
-
-        const updateItems=state.items.concat(action.item);
+        updateItems=state.items.concat(action.item);
         return {
             items: updateItems,
             totalAmount: updatedNumberItem
         }
     }
+    // if(action.type==="Remove"){
+    //     const decrementItem=action.id
+    //     const updateRemoveItems=state.amount - action.item * action.price 
+    // }
     return defaultInitialData;
 }
 const ContextProvider = (props) => {

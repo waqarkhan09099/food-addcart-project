@@ -17,29 +17,34 @@ const PopUp = (props) => {
     const totalAmount = CartCtx.totalAmount.toFixed(2);
     const hasContext=CartCtx.items.length===0;
 
-    const addamountHandler=(item)=>{
-        console.log(item);
-        const existingIndex=CartCtx.items.findIndex(data=>data.id===item.id);
+    const addamountHandler=()=>{
+
+        console.log('click it!!')
+        // console.log(id);
+        const existingIndex=Math.abs(CartCtx.items.findIndex(data=>data.id));
+        console.log(existingIndex)
         const existingItem=CartCtx.items[existingIndex];
+        console.log(existingItem)
         let updateItem;
         if(existingItem){
             updateItem = {
                         ...existingItem,
                         amount: existingItem.amount + 1
                     }
+            CartCtx.addItems[existingItem]=updateItem
+            
         }
     };
 
     const removeAmountHandler=(id)=>{
-        return;
+      return   
     }
-
     return (
         <CardUi class={classes.modal}>
             <div className={`${CartCtx.items.length>0?classes.overflow:''}`}>
                 {CartCtx.items.map(data => {
                     return (
-                        <CartUi name={data.name} key={data.id} countItem={data.amount} description={data.description} price={`${data.price}$`} onAddAmount={addamountHandler}
+                        <CartUi name={data.name} key={data.id} id={data.id}  countItem={data.amount} description={data.description} price={`${data.price}$`} onAddAmount={addamountHandler}
                         onRemoveAmount={removeAmountHandler} />
                     )
 

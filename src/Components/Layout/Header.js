@@ -1,4 +1,4 @@
-import React ,{useState}from 'react'
+import React from 'react'
 import HeaderCart from './HeaderCart';
 import classes from './Header.module.css';
 import Image from '../../Assets/HeaderImage.jpg';

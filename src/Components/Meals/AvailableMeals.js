@@ -145,12 +145,12 @@ const AvailableMeals = (props) => {
             <>
                 <Container >
 
-                    <li key={data.id} id={data.id}>
+                    <li key={data.id}>
                         <h3>{data.name}</h3>
                         <p>{data.description}</p>
                         <span>Price: <span className="price">{data.price.toFixed(2)}$</span></span>
                     </li>
-                    <AmountAdd id={dataId} additemsHandler={addamountHandler}></AmountAdd>
+                    <AmountAdd id={data.id} additemsHandler={addamountHandler}></AmountAdd>
                 </Container>
 
             </>

@@ -19,10 +19,10 @@ function App() {
   }
   const addOrderCardHandler = () => {
     setCondi(true)
-    setCardHandler(false) 
+    setCardHandler(false)
     setAddOrderCard(true)
   }
-  const backHandler=()=>{
+  const backHandler = () => {
     setAddOrderCard(false)
     setCondi(false)
   }
@@ -32,7 +32,7 @@ function App() {
       {cardHandler && <Modal onOpen={addOrderCardHandler} onClose={CardHide} />}
       <header className={classes.main}>
 
-      {addOrderCard&& <OrderPortal back={backHandler}/>}
+        {addOrderCard && <OrderPortal back={backHandler} />}
         <Header addCart={CardShow} disable={condi} />
         <main className={classes.mealsSection}>
           <Meals />

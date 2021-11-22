@@ -48,10 +48,11 @@ const ButtonUi = (props) => {
 };
 
 const CartUi = (props) => {
+    // console.log(props)
     const price=`$${props.price}`;
     return (
         <>
-            <div className={`${classes['meal']} ${props.class}`}>
+            <div className={`${classes['meal']} ${props.class}`} >
                 <h3>{props.name}</h3>
                 <div className={classes.total}>
                     <div>

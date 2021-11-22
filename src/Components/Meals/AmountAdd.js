@@ -16,10 +16,16 @@ const AmountAdd = (props) => {
         const enteredAmountNumber=+enteredAmount;
         
 
-        if(enteredAmount.trim().length===0||enteredAmountNumber<0||enteredAmountNumber>5){
+        if(enteredAmount.trim().length===0||enteredAmountNumber<=0||enteredAmountNumber>=5){
             return setAmountValidation(false);
         }
+        else{
+            setAmountValidation(true)
+        }
+        
+
         props.additemsHandler(enteredAmountNumber);
+
     }
 
 
