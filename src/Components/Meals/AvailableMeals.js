@@ -126,7 +126,7 @@ const DUMMY_MEALS = [
     }
 ];
 
-const dataId=DUMMY_MEALS.map(item=>item.id);
+// const dataId=DUMMY_MEALS.map(item=>item.id);
 
 const AvailableMeals = (props) => {
     const cartCtx=useContext(CartContext);
